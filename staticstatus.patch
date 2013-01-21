@@ -1,0 +1,19 @@
+*** dwm-6.0/dwm.c	2011-12-19 06:38:30.000000000 -0800
+--- dwm.c	2013-01-20 22:32:22.925777948 -0800
+***************
+*** 740,746 ****
+  	drawtext(m->ltsymbol, dc.norm, False);
+  	dc.x += dc.w;
+  	x = dc.x;
+! 	if(m == selmon) { /* status is only drawn on selected monitor */
+  		dc.w = TEXTW(stext);
+  		dc.x = m->ww - dc.w;
+  		if(dc.x < x) {
+--- 740,746 ----
+  	drawtext(m->ltsymbol, dc.norm, False);
+  	dc.x += dc.w;
+  	x = dc.x;
+! 	if(m->num == 0) { /* Draw status on FIRST monitor */
+  		dc.w = TEXTW(stext);
+  		dc.x = m->ww - dc.w;
+  		if(dc.x < x) {

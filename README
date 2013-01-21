@@ -1,0 +1,6 @@
+This repo is a collection of dwm patches that alter the behavior of multiple monitors on dwm.
+Below you will find a list of packages, and what they do.  Install all, or some of them in the usual way.
+
+staticstatus.patch - 
+	Keeps the status bar statically placed in the principle monitor
+	rather than dynamically following the cursor.
